@@ -1,0 +1,149 @@
+/*container start*/
+.container {
+	height: 561px;
+	padding-left: 243px;
+	margin-bottom: 40px;
+}
+.conLeft {
+	width: 714px;
+	height: 561px;
+	float: left;
+}
+.banner {
+	width: 714px;
+	height: 382px;
+	position: relative;
+}
+.bannerImgs {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 8;
+}
+.bannerImgs li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.bannerImgs li a img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.btnLeft, .btnRight {
+	width: 30px;
+	height: 60px;
+	background: url(../img/index/prev_bg.png) no-repeat center;
+	position: absolute;
+	left: 0;
+	top: 45%;
+	z-index: 10;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+span.btnRight {
+	background: url(../img/index/next_bg.png) no-repeat center;
+	left: 684px;
+}
+.bannerBtns {
+	position: absolute;
+	left: 50%;
+	top: 355px;
+	z-index: 15;
+}
+.bannerBtns li {
+	width: 16px;
+	height: 16px;
+	background: #333;
+	color: #fff;
+	border-radius: 8px;
+	float: left;
+	text-align: center;
+	margin: 0 5px;
+}
+.bannerBtns .on {
+	background: #DC0F50;
+}
+.adv1, .adv2 {
+	width: 355px;
+	height: 171px;
+	float: left;
+	margin-top: 7px;
+}
+div.adv2 {
+	float: right;
+}
+.adv1 img,.adv2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.conRight {
+	padding-top: 10px;
+	width: 232px;
+	height: 561px;
+	float: right;
+	position: relative;
+}
+.noLogin, .logined {
+	width: 232px;
+	height: 171px;
+	border: 1px solid #e5e5e5;
+	position: absolute;
+}
+.noLogin {
+	display: none;
+}
+.noLogin .welcom, .logined .welcomUser {
+	height: 98px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.welcom span, .welcomUser span {
+	display: block;
+	margin-top: 5px;
+}
+.login02 {
+	display: block;
+	width: 200px;
+	height: 40px;
+	background: #dc0f50;
+	color: #fff;
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 40px;
+}
+.login02:hover {
+	background: #e33f73;
+	color: #fff;
+}
+.noLogin p {
+	text-align: right;
+	padding: 0 15px;
+}
+.noLogin p a {
+	color: #333;
+	line-height: 30px;
+}
+.noLogin p a:hover {
+	color: #DC0F50;
+}
+div.logined {
+	display: block;
+}
+.welcomUser {
+	background: #dc0f50;
+}
+.welcomUser img {
+	width:40px;
+	height:40px;
+	border-radius: 20px;
+}
+div.welcomUser span {
+	color: #fff;
+}

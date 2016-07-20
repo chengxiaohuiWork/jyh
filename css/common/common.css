@@ -1,0 +1,555 @@
+/*浮动*/
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%
+}
+
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: "."
+}
+
+.clearfix {
+	display: block;
+}
+
+/*设置padding、margin等不改变原宽高*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*布局*/
+.layout {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*header start*/
+.headerTop a:hover {
+	text-decoration: underline;
+}
+.headerTop {
+	background: #e5e5e5;
+	height: 30px;
+}
+.headerTop p {
+	float: left;
+	line-height: 30px;
+}
+.headerTop ul {
+	float: right;
+}
+.headerTop ul span {
+	float: left;
+	margin-right:18px;
+	line-height: 30px;
+	color: #666;
+}
+.headerTop ul li {
+	color: #666;
+	float: left;
+	margin-right:18px;
+}
+.headerTop ul li a {
+	line-height: 30px;
+	
+}
+.headerTop .redA {
+	color: #dc0f50;
+	padding: 0 5px;
+}
+.headerTop .telephone {
+	padding-left: 13px;
+	background: url(../../img/index/iphone.png) no-repeat left center;
+	position: relative;
+}
+.headerTop .weixin {
+	padding-left: 18px;
+	background: url(../../img/index/wx.png) no-repeat left center;
+	position: relative;
+}
+.telCode, .wxCode {
+	display: none;
+	position: absolute;
+	width: 150px;
+	height: 180px;
+	background: #fff;
+	padding: 14px 13px 0 13px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	z-index: 5;
+}
+.telCode {
+	left: -100px;
+}
+.wxCode {
+	left: -100px;
+}
+.telCode i, .wxCode i {
+	background: url(../../img/index/ware_list.png) no-repeat center;
+	position: absolute;
+	left: 110px;
+	top: -11px;
+	width: 14px;
+	height: 11px;
+}
+.telCode img, .wxCode img {
+	width: 121px;
+	height: 121px;
+}
+.telCode a, .wxCode a {
+	font-size: 16px;
+	color: #333;
+	line-height: 44px;
+}
+.telCode a:hover, .wxCode a:hover {
+	text-decoration: none;
+}
+.telephone:hover .telCode {
+	display: block;
+}
+.weixin:hover .wxCode {
+	display: block;
+}
+
+.header {
+	padding-top: 32px;
+	
+}
+.nav {
+	border-bottom: 2px solid #dc0f50;
+}
+.headerSearch {
+	height: 99px;
+}
+.logo {
+	float: left;
+	margin: 9px 110px 0 0;
+}
+.search {
+	width: 500px;
+	height: 99px;
+	margin-right: 156px;
+	float: left;
+}
+.search form {
+	width: 500px;
+	height: 44px;
+	border: 2px #dc0f50 solid;
+	float: left;
+}
+.search .inpText {
+	float: left;
+	padding:10px;
+	font-size: 14px;
+	color: #666;
+}
+.search .inpBtn {
+	float: right;
+	background: #dc0f50;
+	color: #fff;
+	font-size: 16px;
+	width: 98px;
+	height: 100%;
+}
+.search .inpBtn:hover {
+	background: #e33f73;
+}
+.search p {
+	padding-left: 5px;
+	height: 36px;
+}
+.search p a {
+	display:inline-block;
+	margin-right: 15px;
+	line-height: 36px;
+	color: #999;
+	font-size: 14px;
+}
+.search p a:hover {
+	color: #dc0f50;
+}
+.search .first {
+	 color: #dc0f50;
+}
+.myCart {
+	width: 122px;
+	height: 44px;
+	float: left;
+	position: relative;
+	z-index: 3;
+}
+.myCart .cart {
+	display: block;
+	background: #fff url(../../img/index/car_icon.png) no-repeat 10px center;
+	width: 122px;
+	height: 44px;
+	color: #333;
+	font-size: 14px;
+	border: 1px #e5e5e5 solid;
+	line-height: 44px;
+	padding-left: 40px;
+	position: relative;
+}
+.myCart .cart i {
+	width: 17px;
+	height: 16px;
+	background: #dc0f50;
+	color: #fff;
+	border-radius: 8px;
+	padding: 0 5px;
+	position: absolute;
+	left: 112px;
+	top: -8px;
+	line-height: 16px;
+	font-size: 12px;
+}
+.myCart em {
+	display: none;
+	width: 14px;
+	height: 11px;
+	background: url(../../img/index/ware_list.png) no-repeat center;
+	position: absolute;
+	left: 65px;
+	top: 35px;
+	z-index: 19;
+}
+.cartList {
+	width: 308px;
+	position: absolute;
+	left: -186px;
+	top: 45px;
+	border: 1px #e5e5e5 solid;
+	background: #fff;
+	z-index: 18;
+	display: none;
+}
+.hasGoods {
+	display: block;
+}
+.hasGoods h2 {
+	width: 308px;
+	height: 30px;
+	padding: 10px 0 0 10px;
+	color: #333;
+	font-size: 16px;
+	line-height: 30px;
+}
+.hasGoods ul {
+	height: 288px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 18px;
+}
+.toCart {
+	height: 42px;
+	background: #e5e5e5;
+	padding: 5px 12px;
+}
+.toCart a {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	background: #dc0f50;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	float: right;
+}
+.goodNum span {
+	font-weight: bold;
+}
+.goodTotalPrice span {
+	font-size: 16px;
+	color: #dc0f50;
+}
+.noGoods {
+	display: none;
+	height: 58px;
+	line-height: 58px;
+	color: #999;
+	padding-left: 54px;
+	background: url(../../img/index/car.png) no-repeat 15px center;
+	font-size: 14px;
+}
+
+
+.headerNav .allGoodsSort {
+	width: 233px;
+	height: 40px;
+	background: #333;
+	cursor: pointer;
+	padding: 0 20px;
+	color: #fff;
+	margin-right: 30px;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	position: relative;
+	border-bottom: 2px solid #DC0F50;
+}
+.Sort {
+	width: 233px;
+	height: 560px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	display: block;
+}
+.Sort dl dt a {
+	display: block;
+	height: 40px;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #333;
+}
+.Sort dl:hover dt a {
+	color: #fff;
+	background: #dc0f50;
+}
+.Sort dl {
+	position: relative;
+}
+.Sort dl:hover dd {
+	display: block;
+}
+.Sort dl dd {
+	position: absolute;
+	width: 500px;
+	height: 562px;
+	border: 2px solid #dc0f50;
+	border-left: none;
+	background: #fff;
+	padding: 20px;
+	display: none;
+	z-index: 20;
+}
+.Sort .dd1 {
+	left: 231px;
+	top: -2px;
+}
+.Sort .dd2 {
+	left: 231px;
+	top: -42px;
+}
+.Sort .dd3 {
+	left: 231px;
+	top: -82px;
+}
+.Sort .dd4 {
+	left: 231px;
+	top: -122px;
+}
+.Sort .dd5 {
+	left: 231px;
+	top: -162px;
+}
+.Sort .dd6 {
+	left: 231px;
+	top: -202px;
+}
+.Sort .dd7 {
+	left: 231px;
+	top: -242px;
+}
+.Sort .dd8 {
+	left: 231px;
+	top: -282px;
+}
+.Sort .dd9 {
+	left: 231px;
+	top: -322px;
+}
+.Sort .dd10 {
+	left: 231px;
+	top: -362px;
+}
+.Sort .dd11 {
+	left: 231px;
+	top: -402px;
+}
+.Sort .dd12 {
+	left: 231px;
+	top: -442px;
+}
+.Sort .dd13 {
+	left: 231px;
+	top: -482px;
+}
+.Sort dl dd p {
+	height: 30px;
+	color: #333;
+	line-height: 30px;
+	border-bottom: 1px solid #666;
+}
+.Sort dl dd p a {
+	float: right;
+	font-weight: bold;
+}
+.Sort dl dd div {
+	padding-top: 10px;
+}
+.Sort dl dd div a {
+	float: left;
+	margin: 0 10px 10px 0;
+	line-height: 20px;
+}
+.Sort .checked {
+	color: #dc0f50;
+}
+
+
+.nav {
+	height: 40px;
+}
+.nav li {
+	float: left;
+}
+.nav li a {
+	font-size: 18px;
+	color: #333;
+	padding: 0 20px;
+	line-height: 40px;
+}
+.nav li a:hover {
+	color: #dc0f50;
+}
+.nav .indexA {
+	color: #dc0f50;
+}
+
+
+/*warrant start*/
+.warrant {
+	height: 59px;
+	margin: 20px 0 45px 0;
+}
+.warrant ul li {
+	float: left;
+	height: 54px;
+	padding: 0 25px 0 82px;
+	background: url(../../img/index/warrant_icon.png) no-repeat 15px 0;
+	border-right: 1px solid #d6d6d6;
+}
+.warrant ul li p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #333;
+	padding-top: 5px;
+}
+.warrant ul li span {
+	color: #999;
+	line-height: 18px;
+}
+.warrant .li2 {
+	background-position: 15px -55px;
+}
+.warrant .li3 {
+	background-position: 15px -110px;
+}
+.warrant .li4 {
+	background-position: 15px -165px;
+}
+.warrant .li5 {
+	background-position: 15px -220px;
+}
+
+/*foot start*/
+.foot {
+	margin-bottom: 25px;
+}
+.footLeft {
+	width: 860px;
+	padding-left: 78px;
+	float: left;
+}
+.footLeft dl {
+	width: 20%;
+	float: left;
+}
+.footLeft dl dt a {
+	font-size: 16px;
+	color: #666;
+	line-height: 30px;
+	font-weight: bold;
+}
+.footLeft dl dt a:hover {
+	color: #dc0f50;
+}
+.footLeft dl dd a {
+	line-height: 20px;
+	color: #999;
+	display: block;
+}
+.footLeft dl dd a:hover {
+	color: #dc0f50;
+}
+.footRight {
+	width: 260px;
+	height: 151px;
+	padding-right: 50px;
+	float: right;
+}
+.footRight dl {
+	width: 79px;
+	margin-right: 26px;
+	margin-bottom: 10px;
+	float: left;
+}
+.footRight dl dt img {
+	width: 79px;
+	height: 79px;
+}
+.footRight dl dd {
+	color: #666;
+	text-align: center;
+}
+.customerPhone {
+	overflow: hidden;
+	width: 210px;
+	height: 37px;
+	padding-left: 35px;
+	background: url(../../img/index/mobile.png) no-repeat left center;
+}
+.customerPhone p {
+	height: 26px;
+	line-height: 26px;
+	font-size: 20px;
+	color: #666;
+	font-weight: bold;
+}
+.customerPhone span {
+	display: block;
+	color: #999;
+	line-height: 14px;
+	margin-top: -3px;
+}
+
+/*footer start*/
+.footer {
+	height: 72px;
+	background: #333;
+	padding: 10px 0;
+}
+.footer p {
+	line-height: 26px;
+	color: #999;
+}
+.footer p a {
+	color: #999;
+}
+.footer p a:hover {
+	color: #fff;
+}
